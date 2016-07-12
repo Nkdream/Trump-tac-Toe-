@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012DD06E1D356EB800C636AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD06D1D356EB800C636AC /* AppDelegate.swift */; };
+		012DD0701D356EB800C636AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD06F1D356EB800C636AC /* ViewController.swift */; };
+		012DD0731D356EB800C636AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012DD0711D356EB800C636AC /* Main.storyboard */; };
+		012DD0751D356EB800C636AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012DD0741D356EB800C636AC /* Assets.xcassets */; };
+		012DD0781D356EB800C636AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012DD0761D356EB800C636AC /* LaunchScreen.storyboard */; };
+		012DD0831D356EB800C636AC /* Real_tic_tacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD0821D356EB800C636AC /* Real_tic_tacTests.swift */; };
+		012DD08E1D356EB800C636AC /* Real_tic_tacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD08D1D356EB800C636AC /* Real_tic_tacUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		012DD07F1D356EB800C636AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012DD0621D356EB800C636AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012DD0691D356EB800C636AC;
+			remoteInfo = "Real tic tac";
+		};
+		012DD08A1D356EB800C636AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012DD0621D356EB800C636AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012DD0691D356EB800C636AC;
+			remoteInfo = "Real tic tac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012DD06A1D356EB800C636AC /* Real tic tac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real tic tac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		012DD06D1D356EB800C636AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		012DD06F1D356EB800C636AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		012DD0721D356EB800C636AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012DD0741D356EB800C636AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		012DD0771D356EB800C636AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		012DD0791D356EB800C636AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012DD07E1D356EB800C636AC /* Real tic tacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Real tic tacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		012DD0821D356EB800C636AC /* Real_tic_tacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Real_tic_tacTests.swift; sourceTree = "<group>"; };
+		012DD0841D356EB800C636AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012DD0891D356EB800C636AC /* Real tic tacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Real tic tacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		012DD08D1D356EB800C636AC /* Real_tic_tacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Real_tic_tacUITests.swift; sourceTree = "<group>"; };
+		012DD08F1D356EB800C636AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012DD0671D356EB800C636AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD07B1D356EB800C636AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD0861D356EB800C636AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012DD0611D356EB800C636AC = {
+			isa = PBXGroup;
+			children = (
+				012DD06C1D356EB800C636AC /* Real tic tac */,
+				012DD0811D356EB800C636AC /* Real tic tacTests */,
+				012DD08C1D356EB800C636AC /* Real tic tacUITests */,
+				012DD06B1D356EB800C636AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012DD06B1D356EB800C636AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012DD06A1D356EB800C636AC /* Real tic tac.app */,
+				012DD07E1D356EB800C636AC /* Real tic tacTests.xctest */,
+				012DD0891D356EB800C636AC /* Real tic tacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012DD06C1D356EB800C636AC /* Real tic tac */ = {
+			isa = PBXGroup;
+			children = (
+				012DD06D1D356EB800C636AC /* AppDelegate.swift */,
+				012DD06F1D356EB800C636AC /* ViewController.swift */,
+				012DD0711D356EB800C636AC /* Main.storyboard */,
+				012DD0741D356EB800C636AC /* Assets.xcassets */,
+				012DD0761D356EB800C636AC /* LaunchScreen.storyboard */,
+				012DD0791D356EB800C636AC /* Info.plist */,
+			);
+			path = "Real tic tac";
+			sourceTree = "<group>";
+		};
+		012DD0811D356EB800C636AC /* Real tic tacTests */ = {
+			isa = PBXGroup;
+			children = (
+				012DD0821D356EB800C636AC /* Real_tic_tacTests.swift */,
+				012DD0841D356EB800C636AC /* Info.plist */,
+			);
+			path = "Real tic tacTests";
+			sourceTree = "<group>";
+		};
+		012DD08C1D356EB800C636AC /* Real tic tacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				012DD08D1D356EB800C636AC /* Real_tic_tacUITests.swift */,
+				012DD08F1D356EB800C636AC /* Info.plist */,
+			);
+			path = "Real tic tacUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012DD0691D356EB800C636AC /* Real tic tac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012DD0921D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tac" */;
+			buildPhases = (
+				012DD0661D356EB800C636AC /* Sources */,
+				012DD0671D356EB800C636AC /* Frameworks */,
+				012DD0681D356EB800C636AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Real tic tac";
+			productName = "Real tic tac";
+			productReference = 012DD06A1D356EB800C636AC /* Real tic tac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		012DD07D1D356EB800C636AC /* Real tic tacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012DD0951D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tacTests" */;
+			buildPhases = (
+				012DD07A1D356EB800C636AC /* Sources */,
+				012DD07B1D356EB800C636AC /* Frameworks */,
+				012DD07C1D356EB800C636AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				012DD0801D356EB800C636AC /* PBXTargetDependency */,
+			);
+			name = "Real tic tacTests";
+			productName = "Real tic tacTests";
+			productReference = 012DD07E1D356EB800C636AC /* Real tic tacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		012DD0881D356EB800C636AC /* Real tic tacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012DD0981D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tacUITests" */;
+			buildPhases = (
+				012DD0851D356EB800C636AC /* Sources */,
+				012DD0861D356EB800C636AC /* Frameworks */,
+				012DD0871D356EB800C636AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				012DD08B1D356EB800C636AC /* PBXTargetDependency */,
+			);
+			name = "Real tic tacUITests";
+			productName = "Real tic tacUITests";
+			productReference = 012DD0891D356EB800C636AC /* Real tic tacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012DD0621D356EB800C636AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nick L";
+				TargetAttributes = {
+					012DD0691D356EB800C636AC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					012DD07D1D356EB800C636AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 012DD0691D356EB800C636AC;
+					};
+					012DD0881D356EB800C636AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 012DD0691D356EB800C636AC;
+					};
+				};
+			};
+			buildConfigurationList = 012DD0651D356EB800C636AC /* Build configuration list for PBXProject "Real tic tac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012DD0611D356EB800C636AC;
+			productRefGroup = 012DD06B1D356EB800C636AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012DD0691D356EB800C636AC /* Real tic tac */,
+				012DD07D1D356EB800C636AC /* Real tic tacTests */,
+				012DD0881D356EB800C636AC /* Real tic tacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012DD0681D356EB800C636AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012DD0781D356EB800C636AC /* LaunchScreen.storyboard in Resources */,
+				012DD0751D356EB800C636AC /* Assets.xcassets in Resources */,
+				012DD0731D356EB800C636AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD07C1D356EB800C636AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD0871D356EB800C636AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012DD0661D356EB800C636AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012DD0701D356EB800C636AC /* ViewController.swift in Sources */,
+				012DD06E1D356EB800C636AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD07A1D356EB800C636AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012DD0831D356EB800C636AC /* Real_tic_tacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012DD0851D356EB800C636AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012DD08E1D356EB800C636AC /* Real_tic_tacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		012DD0801D356EB800C636AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012DD0691D356EB800C636AC /* Real tic tac */;
+			targetProxy = 012DD07F1D356EB800C636AC /* PBXContainerItemProxy */;
+		};
+		012DD08B1D356EB800C636AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012DD0691D356EB800C636AC /* Real tic tac */;
+			targetProxy = 012DD08A1D356EB800C636AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		012DD0711D356EB800C636AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012DD0721D356EB800C636AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		012DD0761D356EB800C636AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012DD0771D356EB800C636AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012DD0901D356EB800C636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		012DD0911D356EB800C636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012DD0931D356EB800C636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Real tic tac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		012DD0941D356EB800C636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Real tic tac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		012DD0961D356EB800C636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Real tic tacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Real tic tac.app/Real tic tac";
+			};
+			name = Debug;
+		};
+		012DD0971D356EB800C636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Real tic tacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Real tic tac.app/Real tic tac";
+			};
+			name = Release;
+		};
+		012DD0991D356EB800C636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Real tic tacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Real tic tac";
+			};
+			name = Debug;
+		};
+		012DD09A1D356EB800C636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Real tic tacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "swift.Real-tic-tacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Real tic tac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012DD0651D356EB800C636AC /* Build configuration list for PBXProject "Real tic tac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012DD0901D356EB800C636AC /* Debug */,
+				012DD0911D356EB800C636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012DD0921D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012DD0931D356EB800C636AC /* Debug */,
+				012DD0941D356EB800C636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		012DD0951D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012DD0961D356EB800C636AC /* Debug */,
+				012DD0971D356EB800C636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		012DD0981D356EB800C636AC /* Build configuration list for PBXNativeTarget "Real tic tacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012DD0991D356EB800C636AC /* Debug */,
+				012DD09A1D356EB800C636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012DD0621D356EB800C636AC /* Project object */;
+}

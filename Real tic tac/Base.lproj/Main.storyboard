@@ -1,25 +1,168 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Real_tic_tac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" id="ydz-6s-a4j">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="HWE-Z6-5zK" userLabel="ticTacImg1">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tf5-ZW-11r" userLabel="ticTacImg2">
+                                <rect key="frame" x="0.0" y="189" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UWE-5b-EEa" userLabel="ticTacImg3">
+                                <rect key="frame" x="0.0" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ug5-dA-7FR" userLabel="ticTacImg4">
+                                <rect key="frame" x="107" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="oup-oS-hX9" userLabel="ticTacImg5">
+                                <rect key="frame" x="107" y="189" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jHe-iU-vwU" userLabel="ticTacImg6">
+                                <rect key="frame" x="107" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fVG-Ec-XNd" userLabel="ticTacImg7">
+                                <rect key="frame" x="214" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tnd-TF-Rfk" userLabel="ticTacImg8">
+                                <rect key="frame" x="217" y="187" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VGM-Di-zXo" userLabel="ticTacImg9">
+                                <rect key="frame" x="217" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ECd-SL-bIa" userLabel="ticTacButton1">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Wi-d7-zMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h0p-N7-zkf" userLabel="ticTacButton2">
+                                <rect key="frame" x="0.0" y="187" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywe-PB-pEI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Zc-Pc-MdK" userLabel="ticTacButton3">
+                                <rect key="frame" x="0.0" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDn-pA-csg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KlK-ad-9u4" userLabel="ticTacButton4">
+                                <rect key="frame" x="103" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FeZ-c2-JyY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GTM-eh-hXc" userLabel="ticTacButton5">
+                                <rect key="frame" x="107" y="187" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HrW-Iz-XEQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r0N-C3-Cmm" userLabel="ticTacButton6">
+                                <rect key="frame" x="114" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUK-Qh-R7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ACn-rh-ByW" userLabel="ticTacButtton7">
+                                <rect key="frame" x="214" y="0.0" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbI-1b-df9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NEs-qX-t7F" userLabel="ticTacButton8">
+                                <rect key="frame" x="217" y="187" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5Z-EG-tGj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VAL-DQ-F5w" userLabel="ticTacButton9">
+                                <rect key="frame" x="214" y="379" width="106" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UIButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSk-TD-Lcz"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e1g-5H-uZu" userLabel="resetButton">
+                                <rect key="frame" x="114" y="197" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.49320493929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZA-tZ-ilu"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lU8-Rb-RXG" userLabel="userMsg">
+                                <rect key="frame" x="7" y="1" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="label"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="resetButton" destination="e1g-5H-uZu" id="AT9-UJ-SZB"/>
+                        <outlet property="ticTacButton1" destination="ECd-SL-bIa" id="KMR-up-LYI"/>
+                        <outlet property="ticTacButton2" destination="h0p-N7-zkf" id="PoH-5g-wR0"/>
+                        <outlet property="ticTacButton3" destination="4Zc-Pc-MdK" id="qx2-Bl-O9e"/>
+                        <outlet property="ticTacButton4" destination="KlK-ad-9u4" id="D7c-sY-L0t"/>
+                        <outlet property="ticTacButton5" destination="GTM-eh-hXc" id="mGm-Qy-I97"/>
+                        <outlet property="ticTacButton6" destination="r0N-C3-Cmm" id="pLr-pt-p1D"/>
+                        <outlet property="ticTacButton7" destination="ACn-rh-ByW" id="EFb-qy-c0E"/>
+                        <outlet property="ticTacButton8" destination="NEs-qX-t7F" id="S7j-bP-6rR"/>
+                        <outlet property="ticTacButton9" destination="VAL-DQ-F5w" id="IOw-Fg-BVS"/>
+                        <outlet property="ticTacImg1" destination="HWE-Z6-5zK" id="gFF-GD-jX2"/>
+                        <outlet property="ticTacImg2" destination="Tf5-ZW-11r" id="QCe-e4-vUN"/>
+                        <outlet property="ticTacImg3" destination="UWE-5b-EEa" id="DET-vC-9NV"/>
+                        <outlet property="ticTacImg4" destination="Ug5-dA-7FR" id="GHY-5o-WWx"/>
+                        <outlet property="ticTacImg5" destination="oup-oS-hX9" id="M75-sX-P3p"/>
+                        <outlet property="ticTacImg6" destination="jHe-iU-vwU" id="gbD-8O-cE9"/>
+                        <outlet property="ticTacImg7" destination="fVG-Ec-XNd" id="ekZ-aL-7RG"/>
+                        <outlet property="ticTacImg8" destination="Tnd-TF-Rfk" id="o81-uf-mef"/>
+                        <outlet property="ticTacImg9" destination="VGM-Di-zXo" id="Ueq-tS-9g5"/>
+                        <outlet property="userMSG" destination="lU8-Rb-RXG" id="D6U-s5-0ub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="161" y="333"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BG" width="320" height="568"/>
+    </resources>
 </document>

@@ -10,7 +10,7 @@
     
     class ViewController: UIViewController {
         
-        @IBOutlet var ticTacImg1: UIImageView!
+        @IBOutlet var  ticTacImg1: UIImageView!
         @IBOutlet var ticTacImg2: UIImageView!
         @IBOutlet var ticTacImg3: UIImageView!
         @IBOutlet var ticTacImg4: UIImageView!
@@ -117,13 +117,20 @@
         }
         
         func isOccupied(spot: Int) -> Bool  {
-            return plays[spot] == 1 ? true : false// plays[spot] => spot is the KEY; plays[spot] yields the VALUE, which is an Int of either 0 or 1
+        return plays[spot] != nil
+        
+        
+            
+            //           r return plays[spot] == 1 ? true : false// plays[spot] => spot is the KEY; plays[spot] yields the VALUE, which is an Int of either 0 or 1
             
             // this "converts" 0 or 1 to FALSE for 0 or TRUE for 1
             // return plays[spot] == 1 ? true : false
         }
         
+    
+        
         func aiTurn()  {
+            print("a")
             if done {
                 return
             }

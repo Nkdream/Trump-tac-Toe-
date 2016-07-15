@@ -31,7 +31,8 @@
         @IBOutlet var ticTacButton9: UIButton!
         
         @IBOutlet var resetButton: UIButton!
-        @IBOutlet var userMSG: UIButton!
+        
+        @IBOutlet var userMSG: UILabel!
         
         var plays =  Dictionary <Int, Int>()
         var done = false
@@ -82,11 +83,11 @@
         }
         
         func checkDiagRightLeft(value: Int) -> (location: String, pattern: String) {
-            return ("diagRightLeft", checkFor(value, inList: [1, 5, 9]))
+            return ("diagLeftRight", checkFor(value, inList: [3, 5, 7]))
         }
         
         func checkDiagLeftRight(value: Int) -> (location: String, pattern: String) {
-            return ("diagLeftRight", checkFor(value, inList: [3, 5, 7]))
+            return ("diagRightLeft", checkFor(value, inList: [1, 5, 9]))
         }
         
         func checkFor(value: Int, inList: [Int]) -> String {
@@ -102,7 +103,7 @@
         }
         
         func rowCheck(value: Int) -> (location: String, pattern: String)?  {
-            var acceptableFinds = ["011", "110", "101"]
+            var acceptableFinds = ["011","110","101"]
             let findFuncts = [checkTop, checkBottom, checkLeft, checkRight, checkMiddleAcross, checkMiddleDown, checkDiagRightLeft, checkDiagLeftRight]
             // for each of the new algorthms created in find funcs  to check if there are matches
             for algorthm in findFuncts {
@@ -127,6 +128,22 @@
                 return
             }
             aiDeciding = true
+            
+            
+            // IF THE AI HAS TWO IN A ROW
+            if let result = rowCheck(0) {
+                var whereToPlayResult = whereToPlay(result.location, pattern: result.pattern)
+                if !isOccupied(whereToPlayResult) {
+                    setImageForSpot(whereToPlayResult, player: 0)
+                    aiDeciding = false
+                    checkForWin()
+                    return
+                }
+            }
+          
+            
+            // IF THE PLAYER HAS TWO IN A ROW
+           
             if let result = rowCheck(1) {
                 var whereToPlayResult = whereToPlay(result.location, pattern: result.pattern)
                 if !isOccupied(whereToPlayResult) {
@@ -137,11 +154,9 @@
                 }
             }
             
-            
-            
             //Middle availability
-            if isOccupied(5) {
-                setImageForSpot(5, player: 1)
+            if !isOccupied(5) {
+                setImageForSpot(5, player:0)
                 aiDeciding = false
                 checkForWin()
                 return
@@ -166,6 +181,8 @@
                 checkForWin()
                 return
             }
+           
+            
             if let sideAvailable = firstAvailable(false) {
                 setImageForSpot(sideAvailable, player: 0)
                 aiDeciding = false
@@ -174,7 +191,8 @@
             }
             
             userMSG.hidden = false
-            userMSG.titleLabel!.text = "looks like it was a tie"
+            userMSG.text = "looks like it was a tie"
+           
             reset()
             
             aiDeciding = false
@@ -188,41 +206,23 @@
             switch location {
             case "top":
                 if pattern == leftPattern {
-                    return 0
-                } else if pattern == rightPattern {
-                    return 2
-                } else {
                     return 1
+                } else if pattern == rightPattern {
+                    return 3
+                } else {
+                    return 2
                 }
             case "bottom":
                 if pattern == leftPattern {
-                    return 6
-                } else if pattern == rightPattern {
-                    return 8
-                } else {
                     return 7
+                } else if pattern == rightPattern {
+                    return 9
+                } else {
+                    return 8
                 }
                 
             case "left":
                 if pattern == leftPattern {
-                    return 0
-                } else if pattern == rightPattern {
-                    return 6
-                } else {
-                    return 3
-                }
-                
-            case "right":
-                if pattern == leftPattern {
-                    return 2
-                } else if pattern == rightPattern {
-                    return 8
-                } else {
-                    return 5
-                }
-                
-            case "middleVert":
-                if pattern == leftPattern {
                     return 1
                 } else if pattern == rightPattern {
                     return 7
@@ -230,30 +230,48 @@
                     return 4
                 }
                 
-            case "middleHorz":
+            case "right":
                 if pattern == leftPattern {
                     return 3
                 } else if pattern == rightPattern {
-                    return 5
+                    return 9
                 } else {
-                    return 4
+                    return 6
                 }
                 
-            case "diagLeftRight":
-                if pattern == leftPattern {
-                    return 0
-                } else if pattern == rightPattern {
-                    return 8
-                } else {
-                    return 4
-                }
-            case "diagRightLeft":
+            case "middleVert":
                 if pattern == leftPattern {
                     return 2
                 } else if pattern == rightPattern {
+                    return 8
+                } else {
+                    return 5
+                }
+                
+            case "middleHorz":
+                if pattern == leftPattern {
+                    return 4
+                } else if pattern == rightPattern {
                     return 6
                 } else {
-                    return 4
+                    return 5
+                }
+                
+            case "diagRightLeft":
+                if pattern == leftPattern {
+                    return 3
+                } else if pattern == rightPattern {
+                    return 7
+                } else {
+                    return 5
+                }
+            case "diagLeftRight":
+                if pattern == leftPattern {
+                    return 1
+                } else if pattern == rightPattern {
+                    return 9
+                } else {
+                    return 5
                 }
             default: return 4
             }
@@ -261,7 +279,7 @@
         
         func checkForWin() {
             let whoWon = ["I": 0, "you": 1]
-            for (_, value) in whoWon {
+            for (key, value) in whoWon {
                 if (plays[7] == value && plays[8] == value && plays[9] == value) ||
                     (plays[4] == value && plays[5] == value && plays[6] == value) ||
                     (plays[1] == value && plays[2] == value && plays[3] == value) ||
@@ -271,10 +289,10 @@
                     (plays[1] == value && plays[5] == value && plays[9] == value) ||
                     (plays[3] == value && plays[5] == value && plays[7] == value) {
                     userMSG.hidden = false
-                    //                userMSG.text = "Looks like \(key) won America is Doomed!"
+                    userMSG.text = "Looks like \(key) won America is Doomed!"
                     resetButton.hidden = false
                     done = true
-                    //userMSG.text = " Looks like \(key) won America is doomed!"
+                    
                 }
             }
         }
@@ -283,15 +301,14 @@
             userMSG.hidden = true
             if (plays[sender.tag] == nil && !aiDeciding && !done) {
                 setImageForSpot(sender.tag, player: 1)
+                
+                checkForWin()
+                aiTurn()
             }
-            checkForWin()
-            aiTurn()
         }
-        
         func setImageForSpot(spot: Int, player: Int) {
             let playermark = player == 1 ? "Trump" : "Hilary"
             plays[spot] = player
-            
             switch spot {
                 
             case 1:

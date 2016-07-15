@@ -126,11 +126,13 @@
                                     <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZA-tZ-ilu"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lU8-Rb-RXG" userLabel="userMsg">
-                                <rect key="frame" x="7" y="1" width="313" height="30"/>
+                            <label hidden="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RL3-xW-sXd">
+                                <rect key="frame" x="0.0" y="62" width="323" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="label"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.03596584082794501" green="0.69615101439790572" blue="0.027769509175812574" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.0" blue="0.49320493929999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -154,12 +156,12 @@
                         <outlet property="ticTacImg7" destination="fVG-Ec-XNd" id="ekZ-aL-7RG"/>
                         <outlet property="ticTacImg8" destination="Tnd-TF-Rfk" id="o81-uf-mef"/>
                         <outlet property="ticTacImg9" destination="VGM-Di-zXo" id="Ueq-tS-9g5"/>
-                        <outlet property="userMSG" destination="lU8-Rb-RXG" id="D6U-s5-0ub"/>
+                        <outlet property="userMSG" destination="RL3-xW-sXd" id="Sib-QN-V5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="333"/>
+            <point key="canvasLocation" x="-68" y="317"/>
         </scene>
     </scenes>
     <resources>

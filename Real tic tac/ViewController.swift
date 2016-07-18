@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var cellOne: UIView!
+    @IBOutlet var cellTwo: UIView!
+    @IBOutlet var cellThree: UIView!
+    @IBOutlet var cellFour: UIView!
+    @IBOutlet var cellFive: UIView!
+    @IBOutlet var cellSix: UIView!
+    @IBOutlet var cellSeven: UIView!
+    @IBOutlet var cellEight: UIView!
+    @IBOutlet var cellNine: UIView!
+    
     @IBOutlet var  ticTacImg1: UIImageView!
     @IBOutlet var ticTacImg2: UIImageView!
     @IBOutlet var ticTacImg3: UIImageView!
@@ -57,6 +67,19 @@ class ViewController: UIViewController {
         ticTacImg7.image = nil
         ticTacImg8.image = nil
         ticTacImg9.image = nil
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cellOne.layer.borderWidth = 5
+        cellTwo.layer.borderWidth = 5
+        cellThree.layer.borderWidth = 5
+        cellFour.layer.borderWidth = 5
+        cellFive.layer.borderWidth = 5
+        cellSix.layer.borderWidth = 5
+        cellSeven.layer.borderWidth = 5
+        cellEight.layer.borderWidth = 5
+        cellNine.layer.borderWidth = 5     
     }
     
     func checkBottom(value: Int) -> (location: String, pattern: String) {
@@ -209,7 +232,6 @@ class ViewController: UIViewController {
     func whereToPlay(location: String, pattern: String) -> Int {
         let leftPattern = "011"
         let rightPattern = "110"
-        let middlePattern = "101"
         
         switch location {
         case "top":

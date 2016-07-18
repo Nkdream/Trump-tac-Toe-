@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var ticTacImg1: UIImageView!
+    @IBOutlet var  ticTacImg1: UIImageView!
     @IBOutlet var ticTacImg2: UIImageView!
     @IBOutlet var ticTacImg3: UIImageView!
     @IBOutlet var ticTacImg4: UIImageView!
@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     var plays =  Dictionary <Int, Int>()
     var done = false
     var aiDeciding = false
+   // var resetButtonAudioURL = NSURL(fileURLWithPath : NSBundle.mainBundle().pathForResource(<#T##name: String?##String?#>, ofType: <#T##String?#>)
     
     @IBAction func resetButtonClicked(sender: UIButton) {
         done = false
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
     }
     
     func checkFor(value: Int, inList: [Int]) -> String {
-        var conclusion = ""
+        var conclusion  = ""
         for cell in inList {
             if plays[cell] == value {
                 conclusion += "1"
@@ -102,10 +103,10 @@ class ViewController: UIViewController {
         return conclusion
     }
     
-    func rowCheck(value: Int) -> (location: String, pattern: String)? {
-        var acceptableFinds = ["011", "110", "101"]
+    func rowCheck(value: Int) -> (location: String, pattern: String)?  {
+        var acceptableFinds = ["011","110","101"]
         let findFuncts = [checkTop, checkBottom, checkLeft, checkRight, checkMiddleAcross, checkMiddleDown, checkDiagRightLeft, checkDiagLeftRight]
-        // for each of the new algorthms created in find funcs to check if there are matches
+        // for each of the new algorthms created in find funcs  to check if there are matches
         for algorthm in findFuncts {
             // this is the result of the algorithim  which is equal to run ning the algorithim based on the value. Which in this case is which player, it will always be the AI in this case
             let algorthmResults = algorthm(value)
@@ -119,18 +120,23 @@ class ViewController: UIViewController {
     func isOccupied(spot: Int) -> Bool  {
         return plays[spot] != nil
         
+        
+        
         //           r return plays[spot] == 1 ? true : false// plays[spot] => spot is the KEY; plays[spot] yields the VALUE, which is an Int of either 0 or 1
         
         // this "converts" 0 or 1 to FALSE for 0 or TRUE for 1
         // return plays[spot] == 1 ? true : false
     }
     
-    func aiTurn() {
-        //            print("a")
+    
+    
+    func aiTurn()  {
+        print("a")
         if done {
             return
         }
         aiDeciding = true
+        
         
         // IF THE AI HAS TWO IN A ROW
         if let result = rowCheck(0) {
@@ -142,6 +148,7 @@ class ViewController: UIViewController {
                 return
             }
         }
+        
         
         // IF THE PLAYER HAS TWO IN A ROW
         
@@ -155,7 +162,7 @@ class ViewController: UIViewController {
             }
         }
         
-        // Middle availability
+        //Middle availability
         if !isOccupied(5) {
             setImageForSpot(5, player:0)
             aiDeciding = false
@@ -168,18 +175,21 @@ class ViewController: UIViewController {
             for spot in spots {
                 if !isOccupied(spot) {
                     return spot
+                    
                 }
+                
             }
             return nil
         }
         
-        // corner availability
+        // corner  availability
         if let cornerAvailable = firstAvailable(true) {
             setImageForSpot(cornerAvailable, player: 0)
             aiDeciding = false
             checkForWin()
             return
         }
+        
         
         if let sideAvailable = firstAvailable(false) {
             setImageForSpot(sideAvailable, player: 0)
@@ -199,7 +209,7 @@ class ViewController: UIViewController {
     func whereToPlay(location: String, pattern: String) -> Int {
         let leftPattern = "011"
         let rightPattern = "110"
-        //            let middlePattern = "101" // the variable is unused because the else statements cover this situation
+        let middlePattern = "101"
         
         switch location {
         case "top":
@@ -210,7 +220,6 @@ class ViewController: UIViewController {
             } else {
                 return 2
             }
-            
         case "bottom":
             if pattern == leftPattern {
                 return 7
@@ -264,7 +273,6 @@ class ViewController: UIViewController {
             } else {
                 return 5
             }
-            
         case "diagLeftRight":
             if pattern == leftPattern {
                 return 1
@@ -273,7 +281,6 @@ class ViewController: UIViewController {
             } else {
                 return 5
             }
-            
         default: return 4
         }
     }
@@ -290,24 +297,25 @@ class ViewController: UIViewController {
                 (plays[1] == value && plays[5] == value && plays[9] == value) ||
                 (plays[3] == value && plays[5] == value && plays[7] == value) {
                 userMSG.hidden = false
-                userMSG.text = "Looks like \(key) won. \(key) made America great again!"
+                userMSG.text = "Looks like \(key) won America is Doomed!"
                 resetButton.hidden = false
                 done = true
+                
             }
         }
     }
     
-    @IBAction func UIButtonClicked(sender: UIButton) {
+    @IBAction func UIButtonClicked(sender:UIButton) {
         userMSG.hidden = true
         if (plays[sender.tag] == nil && !aiDeciding && !done) {
             setImageForSpot(sender.tag, player: 1)
+            
             checkForWin()
             aiTurn()
         }
     }
-    
     func setImageForSpot(spot: Int, player: Int) {
-        let playermark = player == 1 ? "Trump" : "Hillary"
+        let playermark = player == 1 ? "Trump" : "Hilary"
         plays[spot] = player
         switch spot {
             

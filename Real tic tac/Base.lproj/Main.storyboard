@@ -392,14 +392,14 @@
                                         <exclude reference="vMH-5N-PPk"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="8dW-U9-fNg"/>
-                                        <exclude reference="AyM-XP-aaA"/>
-                                        <exclude reference="Cwb-F4-euX"/>
-                                        <exclude reference="hfP-gT-K5F"/>
                                         <exclude reference="1RS-KR-3yb"/>
                                         <exclude reference="BUC-4k-WK7"/>
                                         <exclude reference="JDS-tY-P1C"/>
                                         <exclude reference="raQ-pi-Si5"/>
+                                        <exclude reference="8dW-U9-fNg"/>
+                                        <exclude reference="AyM-XP-aaA"/>
+                                        <exclude reference="Cwb-F4-euX"/>
+                                        <exclude reference="hfP-gT-K5F"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -408,14 +408,14 @@
                                         <include reference="vMH-5N-PPk"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="8dW-U9-fNg"/>
-                                        <include reference="AyM-XP-aaA"/>
-                                        <include reference="Cwb-F4-euX"/>
-                                        <include reference="hfP-gT-K5F"/>
                                         <include reference="1RS-KR-3yb"/>
                                         <include reference="BUC-4k-WK7"/>
                                         <include reference="JDS-tY-P1C"/>
                                         <include reference="raQ-pi-Si5"/>
+                                        <include reference="8dW-U9-fNg"/>
+                                        <include reference="AyM-XP-aaA"/>
+                                        <include reference="Cwb-F4-euX"/>
+                                        <include reference="hfP-gT-K5F"/>
                                     </mask>
                                 </variation>
                             </view>

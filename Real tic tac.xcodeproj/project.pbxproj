@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011279F21D3DD703005A2CE2 /* get_out_of_here.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011279F11D3DD703005A2CE2 /* get_out_of_here.wav */; };
+		011279F51D3DE984005A2CE2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011279F41D3DE984005A2CE2 /* AVFoundation.framework */; };
 		012DD06E1D356EB800C636AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD06D1D356EB800C636AC /* AppDelegate.swift */; };
 		012DD0701D356EB800C636AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DD06F1D356EB800C636AC /* ViewController.swift */; };
 		012DD0731D356EB800C636AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012DD0711D356EB800C636AC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011279F11D3DD703005A2CE2 /* get_out_of_here.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = get_out_of_here.wav; path = ../get_out_of_here.wav; sourceTree = "<group>"; };
+		011279F41D3DE984005A2CE2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		012DD06A1D356EB800C636AC /* Real tic tac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real tic tac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		012DD06D1D356EB800C636AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		012DD06F1D356EB800C636AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011279F51D3DE984005A2CE2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011279F31D3DD7A8005A2CE2 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				011279F11D3DD703005A2CE2 /* get_out_of_here.wav */,
+			);
+			name = music;
+			sourceTree = "<group>";
+		};
 		012DD0611D356EB800C636AC = {
 			isa = PBXGroup;
 			children = (
+				011279F41D3DE984005A2CE2 /* AVFoundation.framework */,
 				012DD06C1D356EB800C636AC /* Real tic tac */,
 				012DD0811D356EB800C636AC /* Real tic tacTests */,
 				012DD08C1D356EB800C636AC /* Real tic tacUITests */,
 				012DD06B1D356EB800C636AC /* Products */,
+				011279F31D3DD7A8005A2CE2 /* music */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012DD0781D356EB800C636AC /* LaunchScreen.storyboard in Resources */,
+				011279F21D3DD703005A2CE2 /* get_out_of_here.wav in Resources */,
 				012DD0751D356EB800C636AC /* Assets.xcassets in Resources */,
 				012DD0731D356EB800C636AC /* Main.storyboard in Resources */,
 			);

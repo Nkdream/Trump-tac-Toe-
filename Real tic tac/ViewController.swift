@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     /*
      All algorithims that the AI uses to calculate where it is going to move
      These are all the possible win conditions for the game, it checks the value if it meets the condition
-    */
+     */
     func checkBottom(value: Int) -> (location: String, pattern: String) {
         return ("bottom", checkFor(value, inList: [7, 8, 9]))
     }
@@ -344,7 +344,6 @@ class ViewController: UIViewController {
         let playermark = player == 1 ? "Trump" : "Hillary"
         plays[spot] = player
         switch spot {
-            
         case 1:
             ticTacImg1.image = UIImage(named: playermark)
             
